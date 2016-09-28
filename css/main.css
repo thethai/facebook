@@ -1178,6 +1178,7 @@ div#small_img img {
     top: 0;
     left: 0;
     opacity: 0;
+    display: none;
     background-color: #fff;
     transform: translateX(-103%);
     z-index: 10000;
@@ -1208,26 +1209,37 @@ div#small_img img {
     overflow: hidden;
     white-space: normal;
 }
-.test-fr1-chat {
-    position: relative;
+.fr1-chat:hover {
+    display: inline-block !important;
+    cursor: default;
 }
-.test-fr1-chat:after,
-.test-fr1-chat:before {
-            content: " ";
-            display: inline-block;
-            width: 0;
-            height: 0;
-            left: 50%;
-            bottom: 100%;
-            border-style: solid;
-            border-top-color: transparent;
-            border-right-color: transparent;
-            border-left-color: transparent;
-            transform: translateX(-50%);
-            position: absolute;
-        }
-#chat_main_body li:hover .fr1-chat {
+.fr1-chat:after,
+.fr1-chat:before {
+    content: ' ';
     display: inline-block;
+    width: 0;
+    height: 0;
+    left: 102%;
+    bottom: 75%;
+    border-style: solid;
+    border-top-color: transparent;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+.fr1-chat:after {
+    border-width: 10px;
+    border-left-color: white;
+}
+
+.fr1-chat:before {
+    border-width: 11px;
+    border-left-color: #fff;
+}
+#chat_main_body li:hover .fr1-chat {
+    display: inline-block !important;
     opacity: 1;
     z-index: 10000;
 }
