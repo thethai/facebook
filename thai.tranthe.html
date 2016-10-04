@@ -12,105 +12,777 @@
     <!--Navigation -->
     <nav id="header">
         <div id="header_wrapper">
-            <a href="#"> <i class="fa fa-facebook-official" aria-hidden="true"></i> </a>
+            <a href="#">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+            </a>
             <nav id="header_wrapper_main">
                 <input type="text" placeholder="Tìm kiếm người, địa điểm và mọi thứ">
-                <button type="button" id="button_search"><i class="fa fa-search" aria-hidden="true"></i></button>
-                <div id="header_wrapper_main_left"> <span id="header_wrapper_main_left_1"><img src="./img/icon_me.jpg"> Thái</span> <span id="header_wrapper_main_left_2">Trang chủ <span>1</span> </span>
+                <button type="button" id="button_search">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </button>
+                <div id="header_wrapper_main_left">
+                    <a href="./thai.tranthe.html" class="timeline-button">
+                        <img src="./img/icon_me.jpg"> Thái
+                    </a>
+                    <a href="./index.html" class="button-home"> 
+                        Trang chủ
+                    </a>
                 </div>
-                <div id="header_wrapper_main_middle"> <img src="./img/friend1.png"> <img src="./img/message1.png"> <img src="./img/Earth1.png"> </div>
-                <div id="header_wrapper_main_bottom"> <img src="./img/lock.png"> <i class="fa fa-caret-down" aria-hidden="true"></i> </div>
+                <div id="header_wrapper_main_middle">
+                    <img src="./img/friend1.png">
+                    <img src="./img/message1.png">
+                    <img src="./img/Earth1.png">
+                </div>
+                <div id="header_wrapper_main_bottom">
+                    <img src="./img/lock.png">
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                </div>
             </nav>
         </div>
     </nav>
     <!--Main section -->
     <section id="main_body">
-            <!-- Left main body in here -->
-            <div id="personal_main_body">
-                <div id="content_personal_main_body">
-                    <div id="tp_content_personal_main_body">
 
+        <!-- Timeline -->
+        <div id="timeline">
+            <div id="content_timeline">
+
+                <!-- Top timeline -->
+                <div id="top_timeline">
+                    <!-- Banner timeline -->
+                    <div id="banner_timeline">
+                        <img src="./img/futalent.jpg">
+                        <div id="take-photo-wraper">
+                            <i class="fa fa-camera fa-camera1" aria-hidden="true"></i>
+                            <div id="take-photo">
+                                <span class="update-img">Cập nhật ảnh bìa</span>
+                            </div>
+                        </div>
+                        <h3>
+                            <span>Trần Thế Thái</span>
+                            <i class="fa fa-pencil" aria-hidden="true"></i>
+                        </h3>
+                        <button id="update_info">Cập nhật thông tin</button>
+                        <div id="view_activity_log">
+                            <button id="view_activity"> Xem nhật ký hoạt động </button>
+                            <button id="view-other"> 
+                                <i class="fa fa-circle" aria-hidden="true"></i> 
+                                <i class="fa fa-circle" aria-hidden="true"></i> 
+                                <i class="fa fa-circle" aria-hidden="true"></i> 
+                            </button>
+                        </div>
+                    </div>
+                    <!-- Navigation timeline -->
+                    <div id="nav-timeline">
+                        <ul id="nav-timeline-primary">
+                            <li id="special-nav-timeline-primary">Dòng thời gian</li>
+                            <li>
+                                <a href="#">Giới thiệu</a>
+                            </li>
+                            <li>
+                                <a href="">Bạn bè</a>
+                                <span class="small-character">434</span>
+                            </li>
+                            <li>
+                                <a href="#">Ảnh</a>
+                            </li>
+                            <li id="nav-timeline-more">
+                                <a href="#">
+                              Xem thêm 
+                              <i class="fa fa-caret-down" aria-hidden="true"></i>
+                          </a>
+                                <ul id="nav-timeline-other">
+                                    <li><a href="#">Video</a></li>
+                                    <li><a href="#">Các lần check in</a></li>
+                                    <li><a href="#">Thể thao</a></li>
+                                    <li><a href="#">Âm nhạc</a></li>
+                                    <li><a href="#">Phim</a></li>
+                                    <li><a href="#">Chương trình truyền hình</a></li>
+                                    <li><a href="#">Sách</a></li>
+                                    <li><a href="#">Ứng dụng và trò chơi</a></li>
+                                    <li><a href="#">Lượt thích</a></li>
+                                    <li><a href="#">Sự kiện</a></li>
+                                    <li><a href="#">Đánh giá</a></li>
+                                    <li><a href="#">Nhóm</a></li>
+                                    <li><a href="#">Ghi chú</a></li>
+                                    <li><a href="#">SoundCloud</a></li>
+                                    <li><a href="#">Quản lý các phần</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Avatar timeline -->
+                    <div id="avatar-timeline">
+                        <img src="./img/avatar-me.jpg">
+                        <div id="take-avatar">
+                            <i class="fa fa-camera fa-camera2" aria-hidden="true"></i>
+                            <span id="take-avatar-wrapper">
+                                Cập nhật ảnh đại diện
+                            </span>
+                        </div>
                     </div>
                 </div>
-                <div id="ads_personal_main_body">
 
+                <!-- Center timeline -->
+                <div id="center-timeline">
+                    <!-- Left center timeline -->
+                    <div id="left-center-timeline">
+                        <!-- Address timeline -->
+                        <div id="address-timeline">
+                            <ul>
+                                <li>
+                                    <i class="fa fa-suitcase" aria-hidden="true"></i>
+                                    <span class="txt-address-timeline">
+                                         Sinh viên tại 
+                                         <a href="#">Campus Hòa Lạc - Fpt University</a>
+                                         <p>
+                                             <span class="smtxt-address-timeline">
+                                                 Quá khứ:
+                                             </span>
+                                    <a href="#">CLB Phát Thanh Ngô Gia Tự</a>
+                                    <span class="smtxt-address-timeline">và</span>
+                                    <a href="#">Thợ Xây</a>
+                                    </p>
+                                    </span>
+                                    <i class="fa fa-pencil change-pencil" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    <i class="fa fa-university" aria-hidden="true"></i>
+                                    <span class="txt-address-timeline">
+                                         Học Công nghệ phần mềm tại 
+                                         <a href="#">Trường Đại học FPT</a>
+                                         <br>
+                                         <span class="smtxt-address-timeline">
+                                             Đã bắt đầu vào 2014
+                                         </span>
+                                    </span>
+                                    <i class="fa fa-pencil change-pencil" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    <i class="fa fa-home" aria-hidden="true"></i>
+                                    <span class="txt-address-timeline">
+                                         Sống tại 
+                                         <a href="#">Thành phố Hồ Chí Minh</a>
+                                     </span>
+                                    <i class="fa fa-pencil change-pencil" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    <i class="fa fa-location-arrow" aria-hidden="true"></i>
+                                    <span class="txt-address-timeline">
+                                         Đến từ
+                                         <a href="#">Tuy Hòa</a>
+                                     </span>
+                                    <i class="fa fa-pencil change-pencil" aria-hidden="true"></i>
+                                </li>
+                                <li>
+                                    <i class="fa fa-calendar" aria-hidden="true"></i>
+                                    <span class="txt-address-timeline">
+                                         Sinh vào 10 tháng 3 1995
+                                     </span>
+                                </li>
+                                <li>
+                                    <i class="fa fa-rss" aria-hidden="true"></i>
+                                    <span class="txt-address-timeline">
+                                         Có
+                                         <a href="#">134.736 người</a>
+                                         theo dõi
+                                     </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- Album timeline -->
+                        <div id="album-timeline">
+                            <div id="top-album-timeline">
+                                <a href="#">
+                                    <img src="./img/icon-image.png">
+                                </a>
+                                <span class="big-text">
+                                     <a href="">Ảnh</a>
+                                 </span>
+                                <i class="fa fa-chevron-down chevron-down-album smtxt-address-timeline" aria-hidden="true"></i>
+                            </div>
+                            <div id="bottom-album-timeline">
+                                <span>
+                                     <a href="#"><img src="./img/icon-album.jpg"></a>   
+                                 </span>
+                                <span>
+                                     <a href="#"><img src="./img/icon-album.jpg"></a>    
+                                 </span>
+                                <span>
+                                     <a href="#"><img src="./img/icon-album.jpg"></a> 
+                                 </span>
+                                <span>
+                                     <a href="#"><img src="./img/icon-album.jpg"></a>  
+                                 </span>
+                                <span>
+                                     <a href="#"><img src="./img/icon-album.jpg"></a> 
+                                 </span>
+                                <span>
+                                     <a href="#"><img src="./img/icon-album.jpg"></a> 
+                                 </span>
+                                <span>
+                                     <a href="#"><img src="./img/icon-album.jpg"></a>  
+                                 </span>
+                                <span>
+                                     <a href="#"><img src="./img/icon-album.jpg"></a> 
+                                 </span>
+                                <span>
+                                     <a href="#"><img src="./img/icon-album.jpg"></a> 
+                                 </span>
+                            </div>
+                        </div>
+                        <!-- Friend timeline -->
+                        <div id="friend-timeline">
+                            <div id="album-timeline">
+                                <div id="top-album-timeline">
+                                    <a href="#">
+                                        <img src="./img/icon-friend.png">
+                                    </a>
+                                    <span class="big-text">
+                                     <a href="">Bạn bè</a>
+                                     <span class="smtxt-address-timeline" style="font-size:15px;">434</span>
+                                    </span>
+                                    <i class="fa fa-chevron-down chevron-down-album smtxt-address-timeline" aria-hidden="true"></i>
+                                </div>
+                                <div id="bottom-album-timeline">
+                                    <span>
+                                     <a href="#">
+                                         <img src="./img/icon-bf.png">
+                                         <span class="name-friend-timeline">
+                                             트와이스 
+                                         </span>
+                                    </a>
+                                    </span>
+                                    <span>
+                                     <a href="#">
+                                         <img src="./img/icon-bf.png">
+                                         <span class="name-friend-timeline">
+                                             트와이스 
+                                         </span>
+                                    </a>
+                                    </span>
+                                    <span>
+                                     <a href="#">
+                                         <img src="./img/icon-bf.png">
+                                         <span class="name-friend-timeline">
+                                             트와이스 
+                                         </span>
+                                    </a>
+                                    </span>
+                                    <span>
+                                     <a href="#">
+                                         <img src="./img/icon-bf.png">
+                                         <span class="name-friend-timeline">
+                                             트와이스 
+                                         </span>
+                                    </a>
+                                    </span>
+                                    <span>
+                                     <a href="#">
+                                         <img src="./img/icon-bf.png">
+                                         <span class="name-friend-timeline">
+                                             트와이스 
+                                         </span>
+                                    </a>
+                                    </span>
+                                    <span>
+                                     <a href="#">
+                                         <img src="./img/icon-bf.png">
+                                         <span class="name-friend-timeline">
+                                             트와이스 
+                                         </span>
+                                    </a>
+                                    </span>
+                                    <span>
+                                     <a href="#">
+                                         <img src="./img/icon-bf.png">
+                                         <span class="name-friend-timeline">
+                                             트와이스 
+                                         </span>
+                                    </a>
+                                    </span>
+                                    <span>
+                                     <a href="#">
+                                         <img src="./img/icon-bf.png">
+                                         <span class="name-friend-timeline">
+                                             트와이스 
+                                         </span>
+                                    </a>
+                                    </span>
+                                    <span>
+                                     <a href="#">
+                                         <img src="./img/icon-bf.png">
+                                         <span class="name-friend-timeline">
+                                             트와이스 
+                                         </span>
+                                    </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Term timeline -->
+                        <div id="about_right_home">
+                            <a href="#">Quyền riêng tư</a>
+                            <a href="#" class="after-other">Điều khoản</a>
+                            <a href="#" class="after-other">Quảng cáo</a>
+                            <a href="#" class="after-other">
+                                Lựa chọn quảng cáo 
+                                <i class="fa fa-play" aria-hidden="true"></i>
+                            </a>
+                            <a href="#" class="after-other">Cookie</a>
+                            <a href="#" class="after-other">
+                                Xem thêm 
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </a>
+                            <a href="#">Facebook &copy; 2016</a>
+                        </div>
+                    </div>
+                    <!-- Right center timeline -->
+                    <div id="right-center-timeline">
+                        <!-- New post timeline -->
+                        <div id="newposts_center_home">
+                            <div id="upload-timeline">
+                                <span>
+                                     <img src="./img/pencil.png">
+                                     <span> Trạng thái</span>
+                                </span>
+                                <span class="border-after">
+                                     <img src="./img/camera.png">
+                                     <span> Ảnh/video</span>
+                                </span>
+                                <span class="border-after">
+                                     <img src="./img/flag.png"> 
+                                     <span>Sự kiện trong đời</span>
+                                </span>
+                            </div>
+                            <div id="think-center-main-body">
+                                <img src="./img/icon_me.jpg">
+                                <input type="text" placeholder="Bạn đang nghĩ gì vậy?">
+                            </div>
+                            <div id="complete-center-main-body">
+                                <a href="#">
+                                    <img src="./img/add-user-to-social-network.png">
+                                </a>
+                                <a href="#">
+                                    <img src="./img/smiling-circular-face.png">
+                                </a>
+                                <a href="#">
+                                    <img src="./img/placeholder-on-a-map.png">
+                                </a>
+                                <button type="submit">Đăng</button>
+                                <button type="button" class="trust"> 
+                                     <i class="fa fa-lock" aria-hidden="true"></i> 
+                                     Chỉ mình tôi 
+                                     <i class="fa fa-caret-down" aria-hidden="true"></i> 
+                                 </button>
+                            </div>
+                        </div>
+                        <!-- Post Timeline -->
+                        <div id="posts_center_home">
+                            <!-- One post newfeeds -->
+                            <div id="posts1_center_home">
+                                <ul>
+                                    <li>
+                                        <img src="./img/avatar-me.jpg">
+                                        <div>
+                                            <a href="#">Trần Thế Thái</a>
+                                            <span>1 giờ</span>
+                                            <span class="after-other">
+								                <i class="fa fa-globe" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <span class="post-timeline">
+                                            <img src="./img/tetvietnamese.jpg" class="img-timeline">
+                                            <span class="happy">
+                                                <p style="font-size:16px; font-weight:bold;">Trung thu đoàn viên</p> 
+                                                <p>Chúc bạn và gia đình một ngày tết Trung thu thật đầm ấm</p>
+                                            </span>
+                                        <img src="./img/facebook (1).png" alt="" class="beautiful-fb">
+                                        </span>
+                                    </li>
+                                    <li class="like_comment_share">
+                                        <a href="#">
+                                            <img src="./img/like.png">
+                                            <span>Thích</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="./img/comment.png">
+                                            <span>Bình luận</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="./img/share.png">
+                                            <span>Chia sẻ</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="like_more">
+                                    <ul>
+                                        <li>
+                                            <img src="./img/like-more.png">
+                                            <a href="">1205 người thích điều này</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Xem thêm 6 bình luận khác</a>
+                                            <!-- Comment 1 -->
+                                            <div class="friend_comment_like_more">
+                                                <img src="./img/avatar-comment1.jpg">
+                                                <span>
+                                                       <a href="#">Quỳnh Hoaa</a>
+                                                       <span>Lại làm màu r =₫))))))</span>
+                                                </span>
+                                                <a href="#">Thích</a>
+                                                <a href="#">Trả lời</a>
+                                                <h4>6 giờ</h4>
+                                            </div>
+                                        </li>
+                                        <li class="bottom_like_more">
+                                            <img src="./img/icon_me.jpg">
+                                            <input type="text" placeholder="Viết bình luận...">
+                                            <i class="fa fa-camera camera-comment" aria-hidden="true"></i>
+                                            <i class="fa fa-smile-o" aria-hidden="true"></i>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- Two post newfeeds -->
+                            <div id="posts1_center_home">
+                                <ul>
+                                    <li>
+                                        <img src="./img/avatar-me.jpg">
+                                        <div>
+                                            <a href="#">Trần Thế Thái</a>
+                                            <span>14 tháng 9 lúc 23:10</span>
+                                            <span class="after-other">
+                                                <i class="fa fa-globe" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">#cat</a>
+                                        <a href="#">#kitten</a>
+                                        <a href="#">#kitty</a>
+                                        <img src="./img/catkiss.jpg" class="imgresize">
+                                    </li>
+                                    <li class="like_comment_share">
+                                        <a href="#">
+                                            <img src="./img/like.png">
+                                            <span>Thích</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="./img/comment.png">
+                                            <span>Bình luận</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="./img/share.png">
+                                            <span>Chia sẻ</span>
+                                        </a>
+                                    </li>
+                                    <div class="like_more">
+                                        <ul>
+                                            <li>
+                                                <img src="./img/like-more.png">
+                                                <a href="">1205 người thích điều này</a>
+                                            </li>
+                                            <li>
+                                                <!-- Comment 1 -->
+                                                <div class="friend_comment_like_more">
+                                                    <img src="./img/anonymous2.jpg">
+                                                    <span>
+                                                           <a href="#">Lâm Khả</a>
+                                                           <span>So ciu !!!</span>
+                                                    </span>
+                                                    <a href="#">Thích</a>
+                                                    <a href="#">Trả lời</a>
+                                                    <h4>6 giờ</h4>
+                                                </div>
+                                            </li>
+                                            <li class="bottom_like_more">
+                                                <img src="./img/icon_me.jpg">
+                                                <input type="text" placeholder="Viết bình luận...">
+                                                <i class="fa fa-camera camera-comment" aria-hidden="true"></i>
+                                                <i class="fa fa-smile-o" aria-hidden="true"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </ul>
+                            </div>
+                            <!-- Three post newfeeds -->
+                            <!-- Two post newfeeds -->
+                            <div id="posts1_center_home">
+                                <ul>
+                                    <li>
+                                        <img src="./img/avatar-me.jpg">
+                                        <div>
+                                            <a href="#">Trần Thế Thái</a>
+                                            <span>14 tháng 9 lúc 23:10</span>
+                                            <span class="after-other">
+                                                <i class="fa fa-globe" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">#done</a>
+                                        <a href="#">#front end</a>
+                                        <a href="#">#lovely</a>
+                                    </li>
+                                    <li class="like_comment_share">
+                                        <a href="#">
+                                            <img src="./img/like.png">
+                                            <span>Thích</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="./img/comment.png">
+                                            <span>Bình luận</span>
+                                        </a>
+                                        <a href="#">
+                                            <img src="./img/share.png">
+                                            <span>Chia sẻ</span>
+                                        </a>
+                                    </li>
+                                    <div class="like_more">
+                                        <ul>
+                                            <li>
+                                                <img src="./img/like-more.png">
+                                                <a href="">1000 người thích điều này</a>
+                                            </li>
+                                            <li>
+                                                <!-- Comment 1 -->
+                                                <div class="friend_comment_like_more">
+                                                    <img src="./img/anonymous.jpg">
+                                                    <span>
+                                                           <a href="#">Varðandi hælismál</a>
+                                                           <span>...</span>
+                                                    </span>
+                                                    <a href="#">Thích</a>
+                                                    <a href="#">Trả lời</a>
+                                                    <h4>6 giờ</h4>
+                                                </div>
+                                            </li>
+                                            <li class="bottom_like_more">
+                                                <img src="./img/icon_me.jpg">
+                                                <input type="text" placeholder="Viết bình luận...">
+                                                <i class="fa fa-camera camera-comment" aria-hidden="true"></i>
+                                                <i class="fa fa-smile-o" aria-hidden="true"></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-
-            <!-- Chat right main body in here -->
-            <ul id="chat_main_body">
-                <li> <img src="./img/chat1.jpg"> <span>维基百科</span> <span class="online-chat"></span>
-                    <div class="fr1-chat"> <img src="./img/chat1.jpg"> <a href="#">维基百科</a> <span>12 bạn chung bao gồm <a href="#">维基百科</a>và
-                            <a href="#">神奇宝</a>
-                            </span> </div>
-                </li>
-                <li> <img src="./img/chat2.jpg"> <span>自由的百</span> <span class="online-chat"></span>
-                    <div class="fr1-chat"> <img src="./img/chat2.jpg"> <a href="#">自由的百</a> <span>10 bạn chung bao gồm <a href="#">维基百科</a>và
-                            <a href="#">神奇宝</a>
-                            </span> </div>
-                </li>
-                <li> <img src="./img/chat3.jpg"> <span>百度百科</span> <span class="online-chat"></span>
-                    <div class="fr1-chat"> <img src="./img/chat3.jpg"> <a href="#">百度百科</a> <span>18 bạn chung bao gồm <a href="#">维基百科</a>và
-                            <a href="#">神奇宝</a>
-                            </span> </div>
-                </li>
-                <li> <img src="./img/chat4.jpg"> <span>自由</span> <span class="online-chat"></span>
-                    <div class="fr1-chat"> <img src="./img/chat4.jpg"> <a href="#">自由</a> <span>3 bạn chung bao gồm <a href="#">维基百科</a>và
-                            <a href="#">神奇宝</a>
-                            </span> </div>
-                </li>
-                <li> <img src="./img/chat5.jpg"> <span>神奇宝</span> <span class="online-chat"></span>
-                    <div class="fr1-chat"> <img src="./img/chat5.jpg"> <a href="#">神奇宝</a> <span>7 bạn chung bao gồm <a href="#">维基百科</a>và
-                            <a href="#">神奇宝</a>
-                            </span> </div>
-                </li>
-                <li> <img src="./img/chat6.jpg"> <span>神</span> <span class="online-chat"></span>
-                    <div class="fr1-chat"> <img src="./img/chat6.jpg"> <a href="#">神</a> <span>7 bạn chung bao gồm <a href="#">维基百科</a>và
-                            <a href="#">神奇宝</a>
-                            </span> </div>
-                </li>
-                <li> <img src="./img/chat7.jpg"> <span>神奇宝</span> <span class="online-chat"></span>
-                    <div class="fr1-chat"> <img src="./img/chat7.jpg"> <a href="#">神奇宝</a> <span>14 bạn chung bao gồm <a href="#">维基百科</a>và
-                            <a href="#">神奇宝</a>
-                            </span> </div>
-                </li>
-                <li> <img src="./img/chat8.jpg"> <span>神奇宝贝部</span> <span class="online-chat"></span>
-                    <div class="fr1-chat"> <img src="./img/chat8.jpg"> <a href="#">神奇宝</a> <span>14 bạn chung bao gồm <a href="#">维基百科</a>và
-                            <a href="#">神奇宝</a>
-                            </span> </div>
-                </li>
-                <li> <img src="./img/chat9.jpg"> <span>神奇</span> <span class="online-chat"></span>
-                    <div class="fr1-chat"> <img src="./img/chat9.jpg"> <a href="#">神奇</a> <span>58 bạn chung bao gồm <a href="#">维基百科</a>và
-                            <a href="#">神奇宝</a>
-                            </span> </div>
-                </li>
-                <li> <img src="./img/chat10.jpg"> <span>神奇宝贝</span> <span class="online-chat"></span>
-                    <div class="fr1-chat"> <img src="./img/chat10.jpg"> <a href="#">神奇宝贝</a> <span>77 bạn chung bao gồm <a href="#">维基百科</a>và
-                            <a href="#">神奇宝</a>
-                            </span> </div>
-                </li>
-                <li> <img src="./img/chat11.gif"> <span>登录</span> <span class="online-chat"></span>
-                    <div class="fr1-chat"> <img src="./img/chat11.gif"> <a href="#">登录</a> <span>97 bạn chung bao gồm <a href="#">维基百科</a>và
-                            <a href="#">神奇宝</a>
-                            </span> </div>
-                </li>
-                <li> <img src="./img/chat12.gif"> <span>贝贝网</span> <span class="online-chat"></span>
-                    <div class="fr1-chat"> <img src="./img/chat12.gif"> <a href="#">贝贝网</a> <span>77 bạn chung bao gồm <a href="#">维基百科</a>và
-                            <a href="#">神奇宝</a>
-                            </span> </div>
-                </li>
-                <li> <img src="./img/chat13.gif"> <span>特卖商城</span> <span class="online-chat"></span>
-                    <div class="fr1-chat">
-                        <div class="test-fr1-chat"> <img src="./img/chat13.gif"> <a href="#">特卖商城</a> <span>128 bạn chung bao gồm <a href="#">维基百科</a>và
-                                <a href="#">神奇宝</a>
-                                </span> </div>
+            <!-- Ads timeline -->
+            <div id="ads_timeline">
+                <!-- Intro ads timeline -->
+                <div id="intro_ads">
+                    <a href="">Được tài trợ</a>
+                </div>
+                <!-- VIew ads timeline -->
+                <div id="view_ads">
+                    <img src="./img/ads1.png" alt="">
+                    <a href="#">
+                        <strong>[GIÁ SỐC] .COM chỉ 98K/.NETchỉ 78K</strong>
+                    </a>
+                    <a href="#">domainz.com</a>
+                    <p>Giá tốt nhất Việt Nam: Tên miền .COM chỉ 98K /NET chỉ 78K</p>
+                </div>
+                <div id="view_ads">
+                    <img src="./img/ads2.png" alt="">
+                    <a href="#">
+                        <strong>Gồm: Hosting + Tên Miền + Email</strong>
+                    </a>
+                    <a href="#">matbao.net</a>
+                    <p>Gói Combo Hosting Tiện Ích Đã Bao Gồm: Tên Miền + Hosting Tốc Độ Cao + Email. Trọn Gói Chỉ...</p>
+                </div>
+            </div>
+        </div>
+        <!-- Chat right main body in here -->
+        <ul id="chat_main_body">
+            <li>
+                <img src="./img/chat1.jpg">
+                <span>维基百科</span>
+                <span class="online-chat"></span>
+                <div class="fr1-chat">
+                    <img src="./img/chat1.jpg">
+                    <a href="#">维基百科</a>
+                    <span>
+                         12 bạn chung bao gồm 
+                         <a href="#">维基百科</a>và 
+                         <a href="#">神奇宝</a>
+                   </span>
+                </div>
+            </li>
+            <li>
+                <img src="./img/chat2.jpg">
+                <span>自由的百</span>
+                <span class="online-chat"></span>
+                <div class="fr1-chat">
+                    <img src="./img/chat2.jpg">
+                    <a href="#">自由的百</a>
+                    <span>
+                       10 bạn chung bao gồm 
+                       <a href="#">维基百科</a>và 
+                       <a href="#">神奇宝</a>
+                   </span>
+                </div>
+            </li>
+            <li>
+                <img src="./img/chat3.jpg">
+                <span>百度百科</span>
+                <span class="online-chat"></span>
+                <div class="fr1-chat">
+                    <img src="./img/chat3.jpg">
+                    <a href="#">百度百科</a>
+                    <span>
+                       18 bạn chung bao gồm 
+                       <a href="#">维基百科</a>và 
+                       <a href="#">神奇宝</a>
+                   </span>
+                </div>
+            </li>
+            <li>
+                <img src="./img/chat4.jpg">
+                <span>自由</span>
+                <span class="online-chat"></span>
+                <div class="fr1-chat">
+                    <img src="./img/chat4.jpg">
+                    <a href="#">自由</a>
+                    <span>
+                       3 bạn chung bao gồm 
+                       <a href="#">维基百科</a>và 
+                       <a href="#">神奇宝</a>
+                   </span>
+                </div>
+            </li>
+            <li>
+                <img src="./img/chat5.jpg">
+                <span>神奇宝</span>
+                <span class="online-chat"></span>
+                <div class="fr1-chat">
+                    <img src="./img/chat5.jpg">
+                    <a href="#">神奇宝</a>
+                    <span>
+                       7 bạn chung bao gồm 
+                       <a href="#">维基百科</a>và 
+                       <a href="#">神奇宝</a>
+                   </span>
+                </div>
+            </li>
+            <li>
+                <img src="./img/chat6.jpg">
+                <span>神</span>
+                <span class="online-chat"></span>
+                <div class="fr1-chat">
+                    <img src="./img/chat6.jpg">
+                    <a href="#">神</a>
+                    <span>
+                       7 bạn chung bao gồm 
+                       <a href="#">维基百科</a>và 
+                       <a href="#">神奇宝</a>
+                   </span>
+                </div>
+            </li>
+            <li>
+                <img src="./img/chat7.jpg">
+                <span>神奇宝</span>
+                <span class="online-chat"></span>
+                <div class="fr1-chat">
+                    <img src="./img/chat7.jpg">
+                    <a href="#">神奇宝</a>
+                    <span>
+                       14 bạn chung bao gồm 
+                       <a href="#">维基百科</a>và 
+                       <a href="#">神奇宝</a>
+                   </span>
+                </div>
+            </li>
+            <li>
+                <img src="./img/chat8.jpg">
+                <span>神奇宝贝部</span>
+                <span class="online-chat"></span>
+                <div class="fr1-chat">
+                    <img src="./img/chat8.jpg">
+                    <a href="#">神奇宝</a>
+                    <span>
+                       14 bạn chung bao gồm 
+                       <a href="#">维基百科</a>và 
+                       <a href="#">神奇宝</a>
+                   </span>
+                </div>
+            </li>
+            <li>
+                <img src="./img/chat9.jpg">
+                <span>神奇</span>
+                <span class="online-chat"></span>
+                <div class="fr1-chat">
+                    <img src="./img/chat9.jpg">
+                    <a href="#">神奇</a>
+                    <span>58 bạn chung bao gồm <a href="#">维基百科</a>và <a href="#">       神奇宝</a>
+                           </span>
+                </div>
+            </li>
+            <li>
+                <img src="./img/chat10.jpg">
+                <span>神奇宝贝</span>
+                <span class="online-chat"></span>
+                <div class="fr1-chat">
+                    <img src="./img/chat10.jpg">
+                    <a href="#">神奇宝贝</a>
+                    <span>77 bạn chung bao gồm <a href="#">维基百科</a>và<a href="#">神       奇宝</a>
+                           </span>
+                </div>
+            </li>
+            <li>
+                <img src="./img/chat11.gif">
+                <span>登录</span>
+                <span class="online-chat"></span>
+                <div class="fr1-chat">
+                    <img src="./img/chat11.gif">
+                    <a href="#">登录</a>
+                    <span>97 bạn chung bao gồm <a href="#">维基百科</a>và <a href="#">神奇宝</a>
+                           </span>
+                </div>
+            </li>
+            <li>
+                <img src="./img/chat12.gif">
+                <span>贝贝网</span>
+                <span class="online-chat"></span>
+                <div class="fr1-chat">
+                    <img src="./img/chat12.gif">
+                    <a href="#">贝贝网</a>
+                    <span>77 bạn chung bao gồm <a href="#">维基百科</a>và <a href="#">       神奇宝</a>
+                           </span>
+                </div>
+            </li>
+            <li>
+                <img src="./img/chat13.gif">
+                <span>特卖商城</span>
+                <span class="online-chat"></span>
+                <div class="fr1-chat">
+                    <div class="test-fr1-chat">
+                        <img src="./img/chat13.gif">
+                        <a href="#">特卖商城</a>
+                        <span>128 bạn chung bao gồm <a href="#">维基百科</a>và <a href="#">神奇宝</a>
+                               </span>
                     </div>
-                </li>
-                <li> <img src="./img/chat14.jpg"> <span>的母婴</span> <span class="online-chat"></span> </li>
-                <div id="bt_chat_main_body"> <i class="fa fa-search" aria-hidden="true"></i>
-                    <input type="text" placeholder="Tìm kiếm"> <i class="fa fa-cog" aria-hidden="true"></i> <i class="fa fa-pencil-square-o" aria-hidden="true"></i> </div>
-            </ul>
+                </div>
+            </li>
+            <li>
+                <img src="./img/chat14.jpg">
+                <span>的母婴</span>
+                <span class="online-chat"></span>
+            </li>
+            <div id="bt_chat_main_body">
+                <i class="fa fa-search" aria-hidden="true"></i>
+                <input type="text" placeholder="Tìm kiếm">
+                <i class="fa fa-cog" aria-hidden="true"></i>
+                <i class="fa fa-pencil-square-o" aria-hidden="true"></i>
+            </div>
+        </ul>
     </section>
 </body>
 
